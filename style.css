@@ -1,0 +1,160 @@
+body {
+    background: #ccc;
+    font-family: "Poppins"sans-serif;
+}
+
+.shop {
+    padding-top: 50px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.shopping-card {
+    background-color: #fff;
+    border-radius: 15px;
+    margin-left: -30px;
+    width: 850px;
+    height: 125vh;
+}
+
+.content {
+    padding: 40px;
+}
+
+.content .image-product img {
+    max-width: 1000;
+    max-height: 300px;
+}
+
+.second-image img {
+    margin: 5px 3px;
+}
+
+.product-content {
+    margin-left: 30px;
+}
+
+.product-content h4 {
+    color: #514f4f;
+}
+
+.rating-stars {
+    color: yellow;
+}
+
+.varian {
+    width: 300px;
+}
+
+.container-add {
+    display: flex;
+    align-items: center;
+}
+
+.vertical-hr {
+    width: 0.5px;
+    height: 20px;
+    border: none;
+    background-color: #000;
+}
+
+
+/* navtabs */
+.mytabs {
+    margin-left: -300px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mytabs input[type="radio"] {
+    display: none;
+}
+
+.mytabs label {
+    padding: 15px;
+    color: rgb(74, 71, 71);
+    background: #dfdede;
+    border-radius: 10px 10px 0 0;
+}
+
+.mytabs label:hover {
+    transition: all 0.3s ease;
+    background-color: rgb(84, 211, 84);
+    color: #fff;
+}
+
+.mytabs .tab {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    order: 1;
+    display: none;
+}
+
+.mytabs input[type="radio"]:checked+label+.tab {
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked+label {
+    background-color: #fff;
+    color: rgb(84, 211, 84);
+}
+
+
+/* summary */
+.summary {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -760px;
+}
+
+.line {
+    border: 2px solid rgb(86, 220, 86);
+    border-radius: 5px;
+    width: 70px;
+    margin: 0 auto;
+}
+
+.box {
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    border-radius: 10px;
+    padding-top: 30px;
+}
+
+.order {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    display: none;
+    justify-content: space-between;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button a{
+    margin-top: 20px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1030px) {
+    .summary {
+        margin-top: 0;
+        margin-top: 30px;
+        justify-content: start;
+    }
+
+    .box {
+        width: 850px;
+    }
+}

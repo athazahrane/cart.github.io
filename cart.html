@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+
+    <div class="shop">
+        <div class="container">
+            <div class="shopping-card">
+                <div class="row">
+                    <div class="content d-flex">
+                        <div class="col-sm-4">
+                            <div class="first-image">
+                                <img src="img/WhatsApp Image 2022-02-11 at 10.50 13.png" alt="">
+                                <img src="img/WhatsApp Image 2022-02-11 at 10.50 13.png" alt="">
+                                <img src="img/WhatsApp Image 2022-02-11 at 10.50 13.png" alt="">
+                                <img src="img/WhatsApp Image 2022-02-11 at 10.50 13.png" alt="">
+                                <img src="img/WhatsApp Image 2022-02-11 at 10.50 13.png" alt="">
+                            </div>
+                            <div class="second-image">
+                                <img src="img/WhatsApp Image 2022-02-11 at 10.50 13.png" alt="">
+                                <img src="img/WhatsApp Image 2022-02-11 at 10.50 13.png" alt="">
+                                <img src="img/WhatsApp Image 2022-02-11 at 10.50 13.png" alt="">
+                                <img src="img/WhatsApp Image 2022-02-11 at 10.50 13.png" alt="">
+                                <img src="img/WhatsApp Image 2022-02-11 at 10.50 13.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h4>Eriocaulon Cinereum High Quality Aquatic Plants</h4>
+                            <div class="rating-stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i><span class="text-dark">4,5</span></i>
+                            </div>
+                            <hr>
+                            <h2>$10/ <span class="text-secondary" style="font-size: 20px;">Plant</span></h2>
+                            <div class="order mt-4 text-secondary" style="font-size: 25px;">
+                                <p>Your Order</p>
+                                <div class="container-add">
+                                    <button class="btn" onclick="decrement()">-</button>
+                                    <div class="vertical-hr" style="margin-right: 40px;"></div>
+                                    <div class="value text-success" id="quantity">0</div>
+                                    <div class="vertical-hr" style="margin-left: 40px;"></div>
+                                    <button class="btn" onclick="increment()">+</button>
+                                    <span class="label">Plant</span>
+                                </div>
+                            </div>
+                            <div class="min-order text-secondary">
+                                <p>Min. order: 1 plant</p>
+                            </div>
+                            <div class="varian">
+                                <label for="exampleInputVarian">Varian</label>
+                                <select class="form-select" aria-label="Default select example" id="exampleInputVarian">
+                                    <option selected>Choose...</option>
+                                    <option value="1">Varian 1</option>
+                                    <option value="2">Varian 2</option>
+                                    <option value="3">Varian 3</option>
+                                    <option value="4">Varian 4</option>
+                                    <option value="5">Varian 5</option>
+                                </select>
+                            </div>
+                            <div class="mytabs">
+
+                                <input type="radio" name="mytabs" id="tabfree" checked="checked">
+                                <label for="tabfree">Details Products</label>
+                                <div class="tab">
+                                    <h1>Description</h1>
+                                    <span class="black-text">Plant Name :</span> <span class="text-success">Lobelia
+                                        Cordenalis High quality live
+                                        aquatic plants</span>
+                                    <br>
+                                    <span class="text-dark">Varietas Name: <span class="text-success">Myriophyllum
+                                            aquaticum</span></span>
+                                    <br>
+                                    <br>
+                                    <p>This plant can survive in water, and does not need to be watered. This plant can
+                                        survive in water, <br> and
+                                        does not need to be watered. This plant can survive in water, and does not need
+                                        to be watered. <br> This
+                                        plant can survive in water, and does not need to be watered.
+                                    </p>
+                                </div>
+
+                                <input type="radio" name="mytabs" id="tabsilver">
+                                <label for="tabsilver">Shipping</label>
+                                <div class="tab">
+                                    <span>
+                                        <p>Send From <span class="text-success">Indonesia</span></p>
+                                    </span>
+                                    <span>
+                                        <p>Delivery by <span class="text-success">Plane</span></p>
+                                    </span>
+                                </div>
+
+                                <input type="radio" name="mytabs" id="tabgold">
+                                <label for="tabgold">Review</label>
+                                <div class="tab">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis ea sed
+                                        incidunt unde voluptates nulla maxime enim sequi officia aut, vitae saepe hic
+                                        vel
+                                        laborum iste veniam, facilis atque suscipit!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="summary">
+                <div class="box">
+                    <div class="summary-title text-center">
+                        <h2>Summary</h2>
+                    </div>
+                    <div class="line"></div>
+                    <div class="content">
+                        <div class="order">
+                            <h5>Your Order :</h5>
+                            <div id="order-quantity">0</div>
+                        </div>
+                        <div class="price">
+                            <h5>Price :</h5>
+                            <div id="price">$0</div>
+                        </div>
+                        <div class="total">
+                            <h5>Total :</h5>
+                            <div id="total">$0</div>
+                        </div>
+                        <div class="button">
+                            <a href="" class="btn btn-success">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.first-image').slick({
+                arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                fade: true,
+                asNavFor: '.second-img'
+            });
+        });
+
+        $(document).ready(function () {
+            $('.second-image').slick({
+                arrows: false,
+                asNavFor: '.first-img',
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                centerMode: true,
+                focusOnSelect: true,
+            });
+        });
+    </script>
+
+    <script>
+        let quantity = 0;
+        const pricePerItem = 10; // Ganti dengan harga per item yang sesuai
+
+        function increment() {
+            quantity++;
+            updateSummary();
+            updateOrderQuantity();
+        }
+
+        function decrement() {
+            if (quantity > 0) {
+                quantity--;
+                updateSummary();
+                updateOrderQuantity();
+            }
+        }
+
+        function updateSummary() {
+            const quantityElement = document.getElementById('quantity');
+            const priceElement = document.getElementById('price');
+            const totalElement = document.getElementById('total');
+
+            quantityElement.textContent = quantity;
+            priceElement.textContent = `$${pricePerItem}`;
+            totalElement.textContent = `$${quantity * pricePerItem}`;
+        }
+
+        function updateOrderQuantity() {
+            const orderQuantityElement = document.getElementById('order-quantity');
+            orderQuantityElement.textContent = quantity;
+        }
+    </script>
+</body>
+
+</html>
